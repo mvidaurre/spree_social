@@ -1,5 +1,5 @@
 <% if session[:omniauth] %>
-  <h6><%= Spree.t(:please_confirm_your_email) %></h6>
+  <h3 class="panel-title"><%= Spree.t(:please_confirm_your_email
 <% else %>
-  <h6><%= Spree.t(:new_customer) %></h6>
+  <h3 class="panel-title"><%= Spree.t(:new_customer) %></h3>
 <% end %>

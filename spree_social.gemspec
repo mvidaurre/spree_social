@@ -1,8 +1,3 @@
-lib = File.expand_path('../lib/', __FILE__)
-$LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
-
-require 'spree_social/version'
-
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_social'
@@ -21,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.4.0.beta'
+  s.add_dependency 'spree_core', '~> 3.0.0.beta'
   s.add_dependency 'omniauth'
   s.add_dependency 'oa-core'
   s.add_dependency 'omniauth-twitter'
